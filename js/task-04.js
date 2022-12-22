@@ -6,11 +6,6 @@ let counterValue = 0;
 
 const getValue = () => {
   valueEl.textContent = counterValue;
-    if (!counterValue) {
-      btnDecrementEl.setAttribute('disabled', '');
-    } else {
-      btnDecrementEl.removeAttribute('disabled', '');
-    }
 }
 
 btnDecrementEl.addEventListener('click', () => {
@@ -27,17 +22,11 @@ btnIncrementEl.addEventListener('click', () => {
 // const decrementValue = () => {
 //   counterValue -= 1;
 //   valueEl.textContent = counterValue;
-//   if (!counterValue) {
-//     btnDecrementEl.setAttribute('disabled', '');
-//   }
 // };
 
 // const incrementValue = () => {
 //   counterValue += 1;
 //   valueEl.textContent = counterValue;
-//   if (counterValue > 0) {
-//     btnDecrementEl.removeAttribute('disabled');
-//   }
 // };
 
 // btnDecrementEl.addEventListener('click', decrementValue);
@@ -58,15 +47,9 @@ btnIncrementEl.addEventListener('click', () => {
 // btnDecrementEl.addEventListener('click', () => {
 //   counterValue.decrement();
 //   valueEl.textContent = counterValue.value;
-//     if (!counterValue.value) {
-//       btnDecrementEl.setAttribute('disabled', '');
-//     }
 // });
 
 // btnIncrementEl.addEventListener('click', () => {
 //   counterValue.increment();
 //   valueEl.textContent = counterValue.value;
-//     if (counterValue.value > 0) {
-//       btnDecrementEl.removeAttribute('disabled');
-//     }
 // });
